@@ -6,7 +6,12 @@ export default function AboutMe() {
 
   
   return (
-    <div className="backgroundMediumPink w-full h-full flex flex-row">
+    <div className="backgroundMediumPink w-full h-full flex flex-row relative outline-none ring-0">
+
+        {/* Top left angled bracket on edge of rectangle */}
+        <div className="absolute top-0 left-0 w-48 h-48 border-t-2 border-l-2 border-black"></div>
+
+        {/* Styling for headshot picture: rectangular picture with white border */}
         <div className="w-48 h-48 mt-8 mb-12 ml-4 flex-shrink-0">
             <img 
                 src="/images/Headshot.png" 
@@ -16,6 +21,8 @@ export default function AboutMe() {
         </div>
 
         <div className="flex flex-col ml-4 mr-8 mt-12 flex-1">
+
+            {/* Text for heading and body of introduction */}
             <h2 className="textH2">
                 Hi! I'm Gunnika.
             </h2>
@@ -24,6 +31,7 @@ export default function AboutMe() {
                 I am a fourth-year, computer science student at the University of Texas at Arlington with a passion for user-centric design and creating user experiences that are tailored to user needs. 
             </p>
 
+            {/* Email, Google Scholar, and Linkedin icons that link to appropriate sites when clicked */}
             <div className="flex flex-row space-x-6 mt-4 justify-end items-end">
                 <a href="mailto:gunnikak@outlook.com" target="_blank" rel="noopener noreferrer">
                     <img 
@@ -51,7 +59,9 @@ export default function AboutMe() {
             </div>
         </div>
             
-      
+
+        {/* Bottom right angled bracket on edge of rectangle */}
+        <div className="absolute bottom-0 right-0 w-48 h-48 border-b-2 border-r-2 border-black"></div>
 
     </div>
       
