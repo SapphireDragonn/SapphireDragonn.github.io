@@ -1,0 +1,53 @@
+"use client";
+import React, { useState, useEffect } from 'react';
+
+
+export default function AboutMe() {
+
+  
+  return (
+    <div className="backgroundMediumPink w-full h-full flex flex-row">
+        <div className="w-48 h-48 mt-8 mb-12 ml-4 flex-shrink-0">
+            <img 
+                src="/images/Headshot.png" 
+                alt="A square photo of an indian girl with long black hair in a blue button down shirt and white pants. She sits on a log with brown sand and the edge of the ocean in the background." 
+                className="w-full h-full object-cover border-solid border-8 box-border border-white"
+            />
+        </div>
+
+        <div className="flex flex-col ml-4 mr-8 mt-12 flex-1">
+            <h2 className="textH2">
+                Hi! I'm Gunnika.
+            </h2>
+
+            <p className="textBody mt-2">
+                I am a fourth-year, computer science student at the University of Texas at Arlington with a passion for user-centric design and creating user experiences that are tailored to user needs. 
+            </p>
+
+            <div className="flex flex-row space-x-6 mt-4 justify-end items-end">
+                <img 
+                    src="/icons/email_icon.png" 
+                    alt="A black icon in the shape of an envelope." 
+                    className="w-8 h-8 object-cover"
+                />
+
+                <img 
+                    src="/icons/google_scholar_icon.png" 
+                    alt="A black icon in the shape of a diploma." 
+                    className="w-8 h-8 object-cover"
+                />
+
+                <img 
+                    src="/icons/linkedin_icon.png" 
+                    alt="A black rectangular icon with rounded edges. The letters in are in the center, translucent." 
+                    className="w-8 h-8 object-cover"
+                />
+            </div>
+        </div>
+            
+      
+
+    </div>
+      
+  );
+}
