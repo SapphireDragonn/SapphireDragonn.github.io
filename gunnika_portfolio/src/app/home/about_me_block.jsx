@@ -25,23 +25,29 @@ export default function AboutMe() {
             </p>
 
             <div className="flex flex-row space-x-6 mt-4 justify-end items-end">
-                <img 
-                    src="/icons/email_icon.png" 
-                    alt="A black icon in the shape of an envelope." 
-                    className="w-8 h-8 object-cover"
-                />
+                <a href="mailto:gunnikak@outlook.com" target="_blank" rel="noopener noreferrer">
+                    <img 
+                        src="/icons/email_icon.png" 
+                        alt="A black icon in the shape of an envelope." 
+                        className="w-8 h-8 object-cover"
+                    />
+                </a>
+                
+                <a href="https://scholar.google.com/citations?user=WM0v7XIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+                    <img 
+                        src="/icons/google_scholar_icon.png" 
+                        alt="A black icon in the shape of a diploma." 
+                        className="w-8 h-8 object-cover"
+                    />
+                </a>
 
-                <img 
-                    src="/icons/google_scholar_icon.png" 
-                    alt="A black icon in the shape of a diploma." 
-                    className="w-8 h-8 object-cover"
-                />
-
-                <img 
-                    src="/icons/linkedin_icon.png" 
-                    alt="A black rectangular icon with rounded edges. The letters in are in the center, translucent." 
-                    className="w-8 h-8 object-cover"
-                />
+                <a href="https://www.linkedin.com/in/gunnika-kapoor" target="_blank" rel="noopener noreferrer">
+                    <img 
+                        src="/icons/linkedin_icon.png" 
+                        alt="A black rectangular icon with rounded edges. The letters in are in the center, translucent." 
+                        className="w-8 h-8 object-cover"
+                    />
+                </a>
             </div>
         </div>
             
