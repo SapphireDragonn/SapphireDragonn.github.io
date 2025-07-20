@@ -23,6 +23,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
 .backgroundWhite {
@@ -51,14 +52,34 @@ body {
   color: #000000;
 }
 
+.textH1OutOfOrder {
+  font-family: 'Playfair', serif;
+  font-size: 3em;
+  color: #FFFFFF;
+}
+
 .textH2 {
   font-family: 'Playfair', serif;
   font-size: 2em;
   color: #000000;
 }
 
+.textH2Bold {
+  font-family: 'Playfair', serif;
+  font-size: 2em;
+  color: #000000;
+  font-weight: bold;
+}
+
 .textBody {
   font-family: 'Tenor Sans', serif;
   font-size: 1em;
   color: #000000;
+}
+
+.textBodyBold {
+  font-family: 'Tenor Sans', serif;
+  font-size: 1em;
+  color: #000000;
+  font-weight: 700;
 }

@@ -2,14 +2,17 @@
 import React, { useState, useEffect } from 'react';
 import AboutMe from './about_me_block'
 import PortfolioItem from './portfolio_item'
+import Link from "next/link";
+
 
 
 export default function HomePage() {
   // Forager portfolio item details
 
   const Forager = {
-    heading: <h1>Forager</h1>,
-    body: <p>Forager helps mushroom foragers of all experience levels have a safe foraging experience. Edible and toxic mushrooms often appear nearly identical, aside from a few defining characteristics. Select mushrooms of interest, learn more about them, and connect with local foraging communities.</p>,
+    route: "forager",
+    heading: "Forager",
+    body: "Forager helps mushroom foragers of all experience levels have a safe foraging experience. Edible and toxic mushrooms often appear nearly identical, aside from a few defining characteristics. Select mushrooms of interest, learn more about them, and connect with local foraging communities.",
     img: <img 
                 src="/images/Home_Page_Forager.png" 
                 alt="A screenshot of an application page with a picture of a shaggy inkcap mushroom from a foraging deck. It is labeled as edible with a source for more information. The center shows the mushroom (white with a black rimmed cap) and characteristics around the edges. Left and right arrows line the edges and below the image are a trash can icon, a flip icon, and a comment icon." 
@@ -21,12 +24,13 @@ export default function HomePage() {
 
   // Encountr portfolio item details
   const Encountr = {
-    heading: <h1>Encountr</h1>,
-    body: <p>Encountr connected Pokémon players of all experience levels with an AI-powered, intelligent Research Assistant to explore methods for encountering Pokémon in the video game.</p>,
+    route: "encountr",
+    heading: "Encountr",
+    body: "Encountr connected Pokémon players of all experience levels with an AI-powered, intelligent Research Assistant to explore methods for encountering Pokémon in the video game.",
     img: <img 
                 src="/images/home_page_encountr.png" 
                 alt="A screenshot of an application. A character in a blue coat and blue cape stands in front of a purple library. The title Encountr is in the top left corner. Below those images are a welcoming message and a text input box." 
-                className="w-full h-full object-cover border-solid border-8 box-border border-white"
+                className="w-100 h-60 object-cover border-solid border-8 box-border border-white"
             />,
     backgroundColor: "backgroundMediumPink",
     outerRectangleColor: "backgroundDarkPink"
@@ -58,15 +62,25 @@ export default function HomePage() {
         <div className="mt-8 ml-3 mr-3">
           <div className="w-full border-t border-dashed border-black mt-8 mb-8"></div>
 
-          {portfolioItems.map((item, index) => (
-            <React.Fragment key={index}>
-              {index !== 0 && (
-                <div className="w-full border-t border-dashed border-black mt-8 mb-8"></div>
-              )}
+          <div className="w-full h-full">
 
-              <PortfolioItem portfolioItem={item} />
-            </React.Fragment>
-          ))}
+            {portfolioItems.map((item, index) => (
+              <React.Fragment key={index}>
+                {index !== 0 && (
+                  <div className="w-full h-full border-t border-dashed border-black mt-8 mb-8"></div>
+                )}
+                
+                {/* <Link href={`/${item.route}`}>
+                  <a className="block hover:cursor-pointer">
+                    <PortfolioItem portfolioItem={item} />
+                  </a>
+                </Link> */}
+                <Link href={`/${item.route}`}>
+                  <PortfolioItem portfolioItem={item} />
+                </Link>
+              </React.Fragment>
+            ))}
+          </div>
         </div>
 
         
