@@ -1,16 +1,14 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import ComingSoon from './coming_soon'
 
 
 export default function EncountrPage() {
   
   
   return (
-    <div className="w-full h-full backgroundBlack">
-        <h1 className="textH1OutOfOrder">
-            Coming Soon!
-        </h1>
-
+    <div className="w-full h-full backgroundBlack items-center justify-center">
+        <ComingSoon/>
     </div>
       
   );

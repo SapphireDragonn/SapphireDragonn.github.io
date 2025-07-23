@@ -7,7 +7,7 @@ export default function PortfolioItem({portfolioItem}) {
   
   return (
     <div className={`w-full h-full pt-4 pb-4 flex flex-row items-center ${portfolioItem.backgroundColor} justify-center`}>
-        <div className=" w-1/2 flex flex-col ml-4 mr-8">
+        <div className=" w-1/2 flex flex-col ml-16 mr-8 mt-8 mb-8">
 
             {/* Text for heading and body of portfolio item */}
             <h2 className="textH2">

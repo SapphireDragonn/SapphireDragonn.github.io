@@ -6,12 +6,12 @@ export default function LowFidBlock() {
   
   
   return (
-    <div className="flex flex-col w-full h-full backgroundWhite mr-3">
+    <div className="flex flex-col w-full h-full backgroundWhite pr-3 pl-3">
         <h1 className = "flex justify-center textH1 backgroundWhite">
             3. Low Fidelity Prototyping
         </h1>
 
-        <div className="flex flex-col justify-center space-y-8 mt-8">
+        <div className="flex flex-col justify-center space-y-8 mt-8 pl-3 pr-3">
             <img 
                 src="/images/Basket_Metaphor.png" 
                 alt="A block rgarding the basket metaphor with a flashcard, a written description, and sketched prototypes." 

@@ -40,62 +40,54 @@ export default function HomePage() {
 
   
   return (
-    <div className="flex flex-col w-full h-full backgroundLightPink">
+    <div className="flex flex-col w-full min-h-screen backgroundLightPink">
 
-      {/* About me block */}
-      <div className="mt-16 ml-3 mr-3">
+      {/* About Me block inside max-width container */}
+      <div className="max-w-screen-xl mx-auto px-12 mt-16">
         <AboutMe/>
       </div>
 
-      {/* Dividing line */}
-      <div className="w-full h-0.5 bg-black mt-16">
-      </div>
+      {/* Full width dividing line */}
+      <div className="w-full h-0.5 bg-black mt-16"></div>
 
+      {/* Portfolio Section */}
       <div className="backgroundWhite">
-        <h1 className="textH1 mt-8 ml-3">
-          PORTFOLIO
-        </h1>
 
-        
-        {/* Portfolio Items with Dividing Lines */}
-
-        <div className="mt-8 ml-3 mr-3">
-          <div className="w-full border-t border-dashed border-black mt-8 mb-8"></div>
-
-          <div className="w-full h-full">
-
-            {portfolioItems.map((item, index) => (
-              <React.Fragment key={index}>
-                {index !== 0 && (
-                  <div className="w-full h-full border-t border-dashed border-black mt-8 mb-8"></div>
-                )}
-                
-                {/* <Link href={`/${item.route}`}>
-                  <a className="block hover:cursor-pointer">
-                    <PortfolioItem portfolioItem={item} />
-                  </a>
-                </Link> */}
-                <Link href={`/${item.route}`}>
-                  <PortfolioItem portfolioItem={item} />
-                </Link>
-              </React.Fragment>
-            ))}
-          </div>
+        {/* Header constrained in max-width container */}
+        <div className="max-w-screen-xl mx-auto px-12">
+          <h1 className="textH1 mt-8">
+            PORTFOLIO
+          </h1>
         </div>
 
-        
-        {/* Buffer div to add space to the bottom */}
-        <div className="pt-16">
+        {/* Full width dashed line */}
+        <div className="max-w-screen-xl mx-auto px-12 border-t border-dashed border-black mt-8 mb-8"></div>
 
+        {/* Portfolio Items constrained container */}
+        <div className="max-w-screen-xl mx-auto px-12 min-h-screen">
+          {portfolioItems.map((item, index) => (
+            <React.Fragment key={index}>
+              {index !== 0 && (
+                // Full width dashed line between items
+                <div className="border-t border-dashed border-black mt-8 mb-8"></div>
+              )}
+              <Link href={`/${item.route}`}>
+                <PortfolioItem portfolioItem={item} />
+              </Link>
+            </React.Fragment>
+          ))}
         </div>
 
+        {/* Optional full width dividing line at bottom */}
+        <div className="max-w-screen-xl mx-auto border-t border-dashed border-black mt-16 mb-8"></div>
 
+        {/* Buffer padding */}
+        <div className="pt-16"></div>
 
       </div>
-      
-
 
     </div>
+
       
   );
 }

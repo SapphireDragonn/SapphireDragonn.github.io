@@ -6,7 +6,7 @@ export default function BrainstormingBlock() {
   
   
   return (
-    <div className="flex flex-col w-full h-full backgroundWhite">
+    <div className="flex flex-col w-full h-full backgroundWhite pl-3 pr-3">
         <h1 className = "flex justify-center textH1 backgroundWhite">
             2. Brainstorming
         </h1>
@@ -19,7 +19,7 @@ export default function BrainstormingBlock() {
             <img 
                 src="/images/forager_functionalities_1.png" 
                 alt="A list of teal postcards with various descriptions of functionalities the interface could provide." 
-                className="w-full h-auto bject-cover"
+                className="w-15/16 h-auto object-cover"
             />
         </div>
         
@@ -35,7 +35,7 @@ export default function BrainstormingBlock() {
             <img 
                 src="/images/forager_metaphors_1.png" 
                 alt="A list of teal postcards with various descriptions of metaphors the interface could provide." 
-                className="w-full h-auto bject-cover"
+                className="w-15/16 h-auto object-cover"
             />
         </div>
         

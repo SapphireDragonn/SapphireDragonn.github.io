@@ -48,38 +48,44 @@ body {
 
 .textH1 {
   font-family: 'Playfair', serif;
-  font-size: 3em;
+  font-size: 4em;
   color: #000000;
+}
+
+.textH1White {
+  font-family: 'Playfair', serif;
+  font-size: 4em;
+  color: #FFFFFF;
 }
 
 .textH1OutOfOrder {
   font-family: 'Playfair', serif;
-  font-size: 3em;
+  font-size: 4em;
   color: #FFFFFF;
 }
 
 .textH2 {
   font-family: 'Playfair', serif;
-  font-size: 2em;
+  font-size: 3em;
   color: #000000;
 }
 
 .textH2Bold {
   font-family: 'Playfair', serif;
-  font-size: 2em;
+  font-size: 3em;
   color: #000000;
   font-weight: bold;
 }
 
 .textBody {
   font-family: 'Tenor Sans', serif;
-  font-size: 1em;
+  font-size: 2em;
   color: #000000;
 }
 
 .textBodyBold {
   font-family: 'Tenor Sans', serif;
-  font-size: 1em;
+  font-size: 2em;
   color: #000000;
   font-weight: 700;
 }
